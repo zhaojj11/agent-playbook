@@ -6,24 +6,30 @@
 
 ## 在项目里按需采用
 
-这是一份独立参考包。按 [采用步骤](adoption-guide.md) 将需要的模板复制进目标项目，再按项目修改；不要直接覆盖已有的 `~/.agents` 或其他全局配置。仓库根目录的 `AGENTS.md` 含占位符和特定场景的规则，不能原样用于所有新项目。
+这是一份独立参考包。先读 [公共与差异的分层](reference/layering.md)，再按 [采用步骤](adoption-guide.md) 组合公共内核、项目事实和可选能力规则。不要直接覆盖已有的 `AGENTS.md`、`~/.agents` 或其他全局配置。
+
+## 三层组合
+
+1. **公共内核**：修改范围、事实归属、失败、凭证和验证等跨项目规则。
+2. **项目事实**：仓库身份、目录、命令、架构入口和项目不变量，必须现场填写。
+3. **能力规则**：TypeScript、Agent 产品、monorepo、文档集等 profile，项目具备该能力时才选择。
+
+任务步骤继续放 skill，取舍放决策记录，可机械判断的不变量放检查；它们不是根 `AGENTS.md` 的附录。
 
 ## 目录
 
 | 路径 | 用途 |
 |---|---|
-| `adoption-guide.md` | 30 分钟内落到一个仓库 |
-| `reference/principles.md` | 为什么这样分，以及不该照搬什么 |
-| `templates/AGENTS.md` | 仓库根常驻指令，复制后按项目删改 |
-| `templates/docs/AGENTS.md` | 子树指令示例 |
-| `templates/notes/README.md` | 决策记录怎么放、何时写 |
-| `templates/notes/decision-record-template.md` | 一篇决策记录的骨架 |
-| `templates/skills/context-and-tools/SKILL.md` | 模型看见什么、工具说明怎么写 |
-| `templates/skills/prose/SKILL.md` | 注释和文档写到哪为止 |
-| `templates/skills/error-handling/SKILL.md` | 失败、恢复、对用户怎么说 |
-| `templates/skills/pre-change-checks/SKILL.md` | 提交前跑哪些检查、不跑哪些 |
-| `checklists/automated-checks.md` | 值得做成自动检查的规则 |
-| `checklists/writing-checklist.md` | 审文档和提示词时的废话清单 |
+| [`adoption-guide.md`](adoption-guide.md) | 把公共内核和项目差异组合进一个仓库 |
+| [`reference/layering.md`](reference/layering.md) | 判断一条规则是公共、能力相关还是项目特有 |
+| [`reference/principles.md`](reference/principles.md) | 为什么这样分，以及不该照搬什么 |
+| [`templates/AGENTS.md`](templates/AGENTS.md) | 只含公共内核和项目事实槽位的根模板 |
+| [`templates/profiles/`](templates/profiles/README.md) | 按项目能力选择的规则候选 |
+| [`templates/docs/AGENTS.md`](templates/docs/AGENTS.md) | 子树指令示例 |
+| [`templates/notes/`](templates/notes/README.md) | 决策记录的规则和骨架 |
+| [`templates/skills/`](templates/skills/) | 文案、错误处理、审查、测试可靠性、升级和变更前检查等按需流程 |
+| [`checklists/automated-checks.md`](checklists/automated-checks.md) | 值得做成自动检查的规则 |
+| [`checklists/writing-checklist.md`](checklists/writing-checklist.md) | 审文档和提示词时的废话清单 |
 
 ## 四条先记住
 
