@@ -27,7 +27,7 @@
 | [`templates/profiles/`](templates/profiles/README.md) | 按项目能力选择的规则候选 |
 | [`templates/docs/AGENTS.md`](templates/docs/AGENTS.md) | 子树指令示例 |
 | [`templates/notes/`](templates/notes/README.md) | 决策记录的规则和骨架 |
-| [`templates/skills/`](templates/skills/) | 按需加载的任务流程和判断标准 |
+| [`templates/skills/`](templates/skills/) | 文案、错误处理、审查、测试可靠性、升级和变更前检查等按需流程 |
 | [`checklists/automated-checks.md`](checklists/automated-checks.md) | 值得做成自动检查的规则 |
 | [`checklists/writing-checklist.md`](checklists/writing-checklist.md) | 审文档和提示词时的废话清单 |
 

@@ -58,6 +58,9 @@ ln -s AGENTS.md CLAUDE.md
 - 在改注释、README、对用户的文案：`prose`
 - 在设计失败和重试：`error-handling`
 - 在提交前不知道该跑什么：`pre-change-checks`
+- 在审查提交、分支或 Pull Request：`code-review`
+- 在排查并发、时钟和共享资源导致的测试波动：`test-reliability`
+- 在修改公开接口、配置或持久化格式：`upgrade-guide`
 
 skill 的 `description` 决定它会不会被加载。写成「什么时候用」，不要写成功能口号。复制 skill 后再在 `AGENTS.md` 中引用；没有复制时不要预留链接。
 
