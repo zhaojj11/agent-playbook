@@ -31,10 +31,10 @@ cp ../agent-playbook/templates/AGENTS.md ./AGENTS.md
 
 查看 `templates/profiles/README.md`。只选择项目已经具备的能力：
 
-- TypeScript：`profiles/typescript.md`
-- 模型、工具或会话产品：`profiles/agent-product.md`
-- 多包或多服务仓库：`profiles/monorepo.md`
-- 成体系的教程、参考或生成文档：`profiles/documentation.md`
+- TypeScript：`templates/profiles/typescript.md`
+- 模型、工具或会话产品：`templates/profiles/agent-product.md`
+- 多包或多服务仓库：`templates/profiles/monorepo.md`
+- 成体系的教程、参考或生成文档：`templates/profiles/documentation.md`
 
 profile 是规则候选，不会被工具自动加载。只把能指向项目中具体对象和验证方式的条目改写进根或子树 `AGENTS.md`；不要整份复制。
 
